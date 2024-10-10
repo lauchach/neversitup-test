@@ -3,9 +3,11 @@
  * @param {string[]} texts list of string [":)", ":(", ":>"]
  * @returns {number} amount of smily face detected
  */
-const countSmilyFace = (text) => {
-    // TODO : start your code here
-}
+
+
+
+const countSmilyFace = arr => 
+    arr.reduce((count, face) => count + /^[:;][-~]?[)D]$/.test(face), 0)
 
 module.exports = {
     countSmilyFace
